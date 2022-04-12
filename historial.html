@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <title>Document</title>
+</head>
+<body>
+
+<!-- navbar -->
+  <!-- Grey with black text -->
+
+
+  <nav class="navbar navbar-expand-sm bg-green navbar-dark sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index_sesion_iniciada.html"><img src="img/logo-superzoo.svg" alt="" width="200"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+          <li>
+            <a class="nav-link" href="index_sesion_iniciada.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" data-toggle="modal" data-target="#myModalLogin">Perfil</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="carrito.html">Carrito</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Segumiento_de_compra.html">Seguimiento de Compra</a>
+          <li class="nav-item">
+            <li>
+              <a class="nav-link" href="historial.html">Historial de Compra</a>
+            </li>
+            <a class="nav-link" href="#" data-toggle="modal" data-target="#myModalSuscripcion">Donacion</a>
+
+          </li>
+        </ul>
+      </div>
+  </div>
+</nav>
+  
+  
+  
+  <!-- Grey with black text -->
+  
+  <nav class="navbar navbar-expand-sm bg-green navbar-dark ">
+      <ul class="navbar-nav ">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+            Perro
+          </a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Alimento</a>
+            <a class="dropdown-item" href="#">Accesorio</a>
+            <a class="dropdown-item" href="#">Farmacia</a>
+            <a class="dropdown-item" href="#">Juguete</a>
+  
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+            Gato
+          </a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Alimento</a>
+            <a class="dropdown-item" href="#">Accesorio</a>
+            <a class="dropdown-item" href="#">Farmacia</a>
+            <a class="dropdown-item" href="#">Juguete</a>
+          </div>
+        </li>
+      </ul>
+    </nav>
+
+<!-- The Modal -->
+<div class="modal" id="myModalLogin">
+  <div class="modal-dialog">
+  <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+      <h4 class="modal-title">Perfil</h4>
+      
+      </div>
+      
+      <div class="card" style="width:300px">
+        <img class="card-img-top justify-content-center" src="img/img_avatar1.png" alt="Card image">
+        <div class="card-body">
+          <h4 class="card-title">Ignacio</h4>
+          
+          
+        </div>
+      </div>
+
+
+      <!-- Modal body -->
+      <div class="modal-body">
+          <form action="index.html" method="GET">
+              
+              <div class="form-group">
+                  <label for="txtUser">Usuario</label>
+                  <h5>Ignacio</h5>
+              </div>
+              
+              <div class="form-group">
+                  <label for="txtPass">Contraseña</label>
+                  <h5>*********</h5>
+              </div>
+
+      
+              
+              <a href="index.html" class="btn btn-danger" role="button">Cerrar sesion</a>
+              
+          </form>
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+      <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+      </div>
+
+  </div>
+  </div>
+</div>
+
+<!-- The Modal -->
+<div class="modal" id="myModalSuscripcion">
+  <div class="modal-dialog">
+  <div class="modal-content">
+
+     <!-- Modal Header -->
+     <div class="modal-header">
+      <h4 class="modal-title">Donacion</h4>
+
+      </div>
+      
+  
+      <!-- Modal body -->
+      <div class="modal-body">
+            <form action="index.html" method="GET">
+              
+              <div class="form-group">
+                  <label for="txtUser">Usuario</label>
+                  <h5>Ignacio</h5>
+              </div>
+              
+              <div class="form-group">
+                  <label for="txtDonacion">Esta donacion va dirijida a la fundacion MIKASA ayudara a mascotas que lo necesitan</label>
+              </div>
+
+              <button type="button" class="btn btn-success">Donar $1000/MES</button>
+              <button type="button" class="btn btn-danger">Desuscribirse</button>
+
+
+
+              
+          </form>
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+      <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+      </div>
+
+  </div>
+  </div>
+</div>
+
+
+<main class="tabla">
+  
+  <div class="container">
+    <h2>Historial de compras</h2>
+    <table class="table">
+      <thead class="thead-dark">
+        <tr>
+          <th>Imagen</th>
+          <th>Descripcion</th>
+          <th>Precio</th>
+          <th>Cantidad</th>
+          <th>Eliminar</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td> <img src="img/Alimento-perro-raza-mediana-y-grande-8-kg.png" alt="" width="50px"></td>
+          <td>Comida Dog Chow</td>
+          <td>$9990</td>
+          <td>1</td>
+          <td><button type="button" class="btn btn-danger">Eliminar</button></td>
+        </tr>
+          <td> <img src="img/Alimento-seco-gato-adulto-carne-3-kg.webp" alt="" width="50px"></td>
+          <td>Comida Whiskas</td>
+          <td>$9990</td>
+          <td>1</td>
+          <td><button type="button" class="btn btn-danger">Eliminar</button></td>
+        </tr>
+          <td> <img src="img/41s4oyCH7hL._SL500_.jpg" alt="" width="50px"></td>
+          <td>Cama para Perro</td>
+          <td>$9990</td>
+          <td>1</td>
+          <td><button type="button" class="btn btn-danger">Eliminar</button></td>
+        </tr>
+          <td> <img src="img/cueva-suave-silas.jpg" alt="" width="50px"></td>
+          <td>Cama para Gatos</td>
+          <td>$9990</td>
+          <td>1</td>
+          <td><button type="button" class="btn btn-danger">Eliminar</button></td>
+        </tr>
+
+      </tbody>
+    </table>
+    
+  </div>
+
+</main>
+
+
+<div class="p-5 bg-green text-white">
+    <div class="d-flex justify-content-between align-items-center">
+        
+        
+        <div class="footer__section">
+           <h2 class="footer__title">Contacto</h2>
+            <p class="footer__txt">ecommerce@pethappy.cl</p>
+        </div>
+        <div class="footer__section">
+            <h2 class="footer__title">Encuentranos</h2>
+            <p class="footer__txt">+569 5408 9446</p>
+        </div>
+        <div class="footer__section">
+            <h2 class="footer__title">Empresa</h2>
+            <p class="footer__txt">Sucursales</p>
+            <p class="footer__txt">Quienes somos</p>
+            <p class="footer__txt">Contacto</p>
+        </div>
+        <div class="footer__section">
+            <h2 class="footer__title">Metodo de pago</h2>
+            <p class="footer__txt"></p>
+            <img src="img/pago1.png" alt="" >
+        </div>
+        <div class="footer__section">
+            <h2 class="footer__title">Siguenos</h2>
+            <p class="footer__txt"></p>
+
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><img src="img/87390.png" width="30px"></a>
+            <a href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="#"><img src="img/502px-Logo_of_YouTube_(2015-2017).svg.webp" width="70px"></a>
+            
+        </div>
+
+    </div>
+</div>
+    
+</body>
+</html>
